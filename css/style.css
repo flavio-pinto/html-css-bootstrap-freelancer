@@ -9,6 +9,11 @@ body {
 /* UTILITIES */
 
 /* TEXT STYLES */
+.section-title-style {
+  font-size: 48px;
+  font-weight: 700;
+}
+
 .white {
   color: white;
 }
@@ -19,6 +24,10 @@ body {
 
 .bkg-darkgreen {
   background: #2c3e50;
+}
+
+.bkg-watergreen {
+  background: #1abc9c;
 }
 
 .font-lato {
@@ -61,9 +70,6 @@ body {
 }
 
 /* JUMBOTRON */
-.jumbotron {
-  background: #1abc9c;
-}
 
 .jumbotron img {
   height: 255px;
@@ -79,10 +85,7 @@ body {
 }
 
 /* PORTFOLIO */
-.portfolio h2 {
-  font-size: 48px;
-  font-weight: 700;
-}
+
 
 .portfolio img {
   max-width: 100%;
@@ -98,4 +101,28 @@ body {
 
 .portfolio .divider {
   margin-bottom: 30px;
+}
+
+/* ABOUT */
+.about {
+  padding-bottom: 80px;
+}
+
+.about p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.about .btn {
+  background-color: inherit;
+  color: white;
+  border: 2px solid white;
+  padding: 15px;
+}
+
+.about .btn:hover {
+  background: white;
+  color: #2c3e50;
+  border: 2px solid white;
 }
