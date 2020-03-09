@@ -6,7 +6,15 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+
+
+
 /* UTILITIES */
+
+.padd-top-btm-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 /* TEXT STYLES */
 .section-title-style {
@@ -104,9 +112,6 @@ body {
 }
 
 /* ABOUT */
-.about {
-  padding-bottom: 80px;
-}
 
 .about p {
   text-align: left;
@@ -125,4 +130,47 @@ body {
   background: white;
   color: #2c3e50;
   border: 2px solid white;
+}
+
+/* FORM STYLES */
+input[type=name],
+input[type=email],
+input[type=text],
+textarea.form-control {
+  height: 80px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: none;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+textarea.form-control {
+  height: 200px;
+}
+
+.large-form .btn {
+  border: 2px solid #1abc9c;
+  padding: 15px 30px;
+}
+
+.large-form .btn:hover {
+  background: #159a80;
+  border: 2px solid #159a80;
+}
+
+
+/* RESPONSIVE */
+@media all and (max-width: 500px) {
+  .divider-line {
+    max-width: 50px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .jumbotron h1,
+  .section-title-style {
+    font-size: 40px;
+  }
 }
