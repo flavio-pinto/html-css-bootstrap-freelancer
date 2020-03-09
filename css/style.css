@@ -7,9 +7,22 @@ body {
 }
 
 /* UTILITIES */
-/* COLORS */
+
+/* TEXT STYLES */
 .white {
   color: white;
+}
+
+.darkgreen {
+  color: #2c3e50;
+}
+
+.bkg-darkgreen {
+  background: #2c3e50;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
 }
 
 /* DIVIDER */
@@ -22,15 +35,24 @@ body {
   display: inline-block;
 }
 
-
 .divider-line {
   background: white;
   width: 100%;
-  max-width: 7rem;
+  max-width: 140px;
   height: 2px;
   border-radius: 1rem;
   border-color: #2c3e50;
   margin-bottom: 8px;
+}
+
+.divider-line-darkgreen {
+  background: #2c3e50;
+}
+
+.divider-icon {
+  font-size: 32px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* STYLES */
@@ -38,9 +60,9 @@ body {
   margin-bottom: 0;
 }
 
+/* JUMBOTRON */
 .jumbotron {
   background: #1abc9c;
-  text-align: center;
 }
 
 .jumbotron img {
@@ -52,6 +74,28 @@ body {
   font-weight: 700;
 }
 
-.jumbotron .divider-icon {
-  font-size: 32px;
+.jumbotron h3 {
+  font-size: 24px;
+}
+
+/* PORTFOLIO */
+.portfolio h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.portfolio img {
+  max-width: 100%;
+}
+
+.portfolio .item-box {
+  border-radius: 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.portfolio .divider {
+  margin-bottom: 30px;
 }
