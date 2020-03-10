@@ -105,6 +105,55 @@ body {
   margin-bottom: 30px;
   border-radius: 7px;
   overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+/* .portfolio .item-box:hover:before {
+  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";
+  font-size: 72px;
+  font-weight: 900;
+  color: white;
+  content: '\f067';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 188, 156, 0.9);
+} */
+
+.portfolio .layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio .layover:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 188, 156, 0.9);
+  transition: 0.5s;
+}
+
+.portfolio .layover:hover i {
+  display: block;
+}
+
+.portfolio .layover i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 72px;
+  font-weight: 900;
+  color: white;
+  display: none;
 }
 
 .portfolio .divider {
