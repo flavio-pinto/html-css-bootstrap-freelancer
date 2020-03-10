@@ -75,9 +75,42 @@ body {
 /* STYLES */
 .navbar {
   margin-bottom: 0;
+  padding: 25px;
+}
+
+.navbar-default {
+  border: 0;
+  border-radius: 0;
+}
+
+.navbar .container .navbar-brand,
+.navbar-default .navbar-nav li a {
+  color: white;
+}
+
+.navbar .container .navbar-brand {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.navbar-default .navbar-nav li a {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background: #1abc9c;
 }
 
 /* JUMBOTRON */
+
+.jumbotron {
+  margin-top: 75px;
+}
 
 .jumbotron img {
   height: 255px;
@@ -109,20 +142,6 @@ body {
   position: relative;
 }
 
-/* .portfolio .item-box:hover:before {
-  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";
-  font-size: 72px;
-  font-weight: 900;
-  color: white;
-  content: '\f067';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(26, 188, 156, 0.9);
-} */
-
 .portfolio .layover {
   position: absolute;
   top: 0;
@@ -141,10 +160,6 @@ body {
   transition: 0.5s;
 }
 
-.portfolio .layover:hover i {
-  display: block;
-}
-
 .portfolio .layover i {
   position: absolute;
   top: 50%;
@@ -156,12 +171,30 @@ body {
   display: none;
 }
 
+.portfolio .layover:hover i {
+  display: block;
+}
+
 .portfolio .divider {
   margin-bottom: 30px;
 }
 
-/* ABOUT */
+/* DEBUG: COL BEFORE INVECE DELLA CLASSE APPOSITA: SE PO FA'?  */
+/* .portfolio .item-box:hover:before {
+  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";
+  font-size: 72px;
+  font-weight: 900;
+  color: white;
+  content: '\f067';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 188, 156, 0.9);
+} */
 
+/* ABOUT */
 .about p {
   text-align: left;
   font-size: 20px;
