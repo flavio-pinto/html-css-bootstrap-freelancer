@@ -133,10 +133,14 @@ body {
 }
 
 /* FORM STYLES */
-input[type=name],
-input[type=email],
-input[type=text],
-textarea.form-control {
+.large-form {
+  padding-bottom: 100px;
+}
+
+.large-form input[type=name],
+.large-form input[type=email],
+.large-form input[type=text],
+.large-form textarea.form-control {
   height: 80px;
   border-top: 0;
   border-left: 0;
@@ -144,6 +148,13 @@ textarea.form-control {
   box-shadow: none;
   font-size: 24px;
   padding-bottom: 20px;
+}
+
+.large-form input[type=name]:focus,
+.large-form input[type=email]:focus,
+.large-form input[type=text]:focus,
+.large-form textarea.form-control:focus {
+  border-color: gray;
 }
 
 textarea.form-control {
@@ -160,6 +171,49 @@ textarea.form-control {
   border: 2px solid #159a80;
 }
 
+/* FOOTER */
+.main-footer h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 25px;
+}
+
+.main-footer span {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.main-footer span a {
+  color: #1abc9c;
+}
+
+.main-footer .btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  color: white;
+  border: 2px solid white;
+}
+
+.main-footer .btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+}
+
+.main-footer .btn:hover {
+  color: #2c3e50;
+  background: white;
+}
+
+.bottom-footer {
+  background: #1a252f;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 /* RESPONSIVE */
 @media all and (max-width: 500px) {
